@@ -1,0 +1,131 @@
+.container {
+    width: 900px;
+}
+
+.top-logo {
+    width: 150px;
+}
+
+h1 {
+    color: #002F62;
+    text-shadow: 2px 1px 2px #CCC;
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: #002F62;
+}
+
+li {
+    margin-left: -20px;
+}
+
+.display-table {
+    display: table;
+}
+
+.display-table-cell-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.badge {
+    font-size: 16px;
+    width: 200px;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+}
+
+th {
+    width: 25%;
+    text-align: center;
+}
+
+.badge-silver {
+    background-color: #DDD;
+    color: #444;
+    border: 1px solid #666;
+}
+
+.badge-gold {
+    background-color: #ffffd0;
+    color: #cc6600;
+    border: 1px solid #cc6600;
+}
+
+.badge-platinum {
+    background-color: #e0f5f5;
+    color: #005580;
+    border: 1px solid #005580;
+}
+
+.badge-callus {
+    background-color: #FFF;
+    color: #005580;
+    border: 1px solid #005580;
+}
+
+.side-cell {
+    background-color: #e9ecef;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-container {
+    border-left: 1px dashed #dee2e6;
+    border-right: 1px dashed #dee2e6;
+}
+
+hr {
+    margin-bottom: 35px;
+    border-top: 1px dashed #dee2e6;
+}
+
+.form-group > label {
+    font-weight: 500;
+}
+
+.modal-content {
+    width: 650px;
+}
+
+.rtl h4 {
+    font-size: 18px;
+}
+
+.rtl h5 {
+    font-size: 16px;
+}
+
+.rtl {
+    text-align: justify;
+    direction: rtl;
+    font-size: 14px;
+}
+
+.rtl li {
+    margin-left: 5px;
+}
+
+ol { 
+    counter-reset: item;
+    padding-right: 25px;
+    padding-left: 15px;
+}
+
+ol li { 
+    display: block;
+    margin-bottom: 15px;
+}
+
+ol li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+}
+
+.list-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* display: inline-block; */
+}

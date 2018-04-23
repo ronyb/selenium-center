@@ -6,6 +6,14 @@
     width: 150px;
 }
 
+.table ul {
+    margin-bottom: 0;
+}
+
+.table td {
+    padding: .50rem;
+}
+
 h1 {
     color: #002F62;
     text-shadow: 2px 1px 2px #CCC;

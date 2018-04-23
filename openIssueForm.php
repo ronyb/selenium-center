@@ -13,6 +13,7 @@
             <option value="Can't upload/download files">Can't upload/download files</option>
             <option value="Browser compatibility problem">Browser compatibility problem</option>
             <option value="Design">Design</option>
+            <option value="Build / dependencies issues (Maven, Gradle, MSBuild, NuGet, etc.)">Build / dependencies issues (Maven, Gradle, MSBuild, NuGet, etc.)</option>
             <option value="Other">Other</option>
         </select>
     </div>
@@ -180,7 +181,10 @@
         <textarea id="anythingElse" name="anythingElse" placeholder="Anything else..." class="form-control" /></textarea>
     </div>
 
+    <!--
     <div class="form-group">
         <input type="submit" value="Open issue" class="btn btn-primary">
     </div>
+    -->
+    
 </form>

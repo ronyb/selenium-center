@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = test_input($_POST["phone"]);
     $message = test_input($_POST["message"]);
     
-    $messageBody =  "<h3>Top-Q Selenium Center - General Query</h3>" .
+    $messageBody =  "<h2>Top-Q Selenium Center - General Query</h2>" .
     "<p><b>Company:</b> " . $company . "</p>" .
     "<p><b>Full name:</b> " . $fullName . "</p>" .
     "<p><b>Role / Title:</b> " . $role . "</p>" .
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     "<p><b>Phone:</b> " . $phone . "</p>" .
     "<p><b>Message:</b></p><p>" . $message . "</p>";
     
-    $result = sendEmail("support@topqsupportcenter.zohodesk.com", "", $email, $fullName, "Selenium Center - General Query", $messageBody);
+    $result = sendEmail("support@topqsupportcenter.zohodesk.com", "", $email, $fullName, "General Query from: " . $fullName . " @ " . $company, $messageBody);
 
     if ($result) {
         include 'generalQuerySuccess.php';

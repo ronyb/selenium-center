@@ -1,9 +1,9 @@
 <!-- Open Issue Modal -->
-<div class="modal fade" id="openIssueModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal" id="openIssueModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Open new issue</h5>
+                <h3 class="modal-title" id="exampleModalLabel">Submit Selenium Question</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -12,7 +12,7 @@
                 <?php include 'openIssueForm.php';?>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary btn-block" id="openIssueBtn">Open issue</button>
+                <button type="button" class="btn btn-primary btn-block" id="submitQuestionModalBtn">Submit Question</button>
             </div>
         </div>
     </div>

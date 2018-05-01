@@ -1,40 +1,18 @@
 $(function() {
-    console.log("ready!" );
-
+    console.log("ready!");
     $("#agreeToTermsCheckbox").click(checkIfToEnableOpenIssueButton);
-    $("#contactUsForm input").keyup(checkIfToEnableOpenIssueButton);
+
+    $("#submitQuestionModalBtn").click(function() {
+        $("#submitQuestionFormBtn").click();
+    });
 });
 
 function checkIfToEnableOpenIssueButton() {
     
-    var allMandatoryContactDetailsProvided = isAllMandatoryContactDetailsProvided();
-
-    if ($("#agreeToTermsCheckbox").prop("checked") && allMandatoryContactDetailsProvided) {
+    if ($("#agreeToTermsCheckbox").prop("checked")) {
         $("#openIssueBtn").prop('disabled', false);
     }
     else {
         $("#openIssueBtn").prop('disabled', true);
     }
 }
-
-function isAllMandatoryContactDetailsProvided() {
-
-    var allMandatoryContactDetailsProvided = true;
-
-    $("#contactUsForm input").each(function() {
-        
-        if ($(this).prop("required")) {
-            if ($(this).val() == "") {
-                allMandatoryContactDetailsProvided = false;
-            }
-        }
-    });
-
-    return allMandatoryContactDetailsProvided;
-}
-
-/*
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-})
-*/

@@ -1,17 +1,19 @@
 <?php
 
-require 'sendEmail.php';
+require 'php/sendEmail.php';
+require 'php/readPostParam.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    $company = test_input($_POST["company"]);
-    $fullName = test_input($_POST["fullName"]);
-    $role = test_input($_POST["role"]);
-    $email = test_input($_POST["email"]);
-    $phone = test_input($_POST["phone"]);
-    $message = test_input($_POST["message"]);
+    $company = read_post_param("company");
+    $fullName = read_post_param("fullName");
+    $role = read_post_param("role");
+    $email = read_post_param("email");
+    $phone = read_post_param("phone");
+    $message = read_post_param("message");
     
     $messageBody =  "<h2>Top-Q Selenium Center - General Query</h2>" .
+    "<hr>" .
     "<p><b>Company:</b> " . $company . "</p>" .
     "<p><b>Full name:</b> " . $fullName . "</p>" .
     "<p><b>Role / Title:</b> " . $role . "</p>" .
@@ -27,14 +29,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     else {
         echo "ERROR";
     }
-}
-  
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    $data = str_replace("\n", "<br>", $data);
-    return $data;
 }
 
 ?>

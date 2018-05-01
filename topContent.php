@@ -1,7 +1,5 @@
 <div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.</p>
+<p>Get instant answers dedicated to your Selenium questions from seasoned Selenium experts.</p>
+<p>Our support team consists of test automation experts, with over 13 years of hands-on experience in open-source automation solutions. All are experts at TopQ, which leads the field of development based test automation solutions in Israel.</p>
+<p>Support in issues relating to Selenium is available in both English and Hebrew, offered in three different tracks designed to meet your specific needs.</p>
 </div>

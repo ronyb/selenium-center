@@ -26,7 +26,7 @@ function sendEmail($toAddress, $toName, $fromAddress, $fromName, $subject, $mess
     );
     
     // Email Sending Details
-    $mail->setFrom($fromAddress, $fromName);
+    $mail->setFrom("topqmatrix2018@gmail.com", $fromName);
     $mail->addAddress($toAddress, $toName);
     $mail->Subject = $subject;
     $mail->msgHTML($messageBody);
